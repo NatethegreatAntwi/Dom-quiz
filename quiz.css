@@ -1,0 +1,77 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6e85b7, #b2abf9);
+  transition: background 1.5s ease-in-out;
+}
+
+.hidden {
+  display: none;
+}
+
+.active-section {
+  display: block;
+}
+
+/* Quiz Container */
+.quiz-container {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  animation: bounce-in 1s ease-in-out;
+  backdrop-filter: blur(15px);
+}
+
+/* Title Styling */
+#main-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: black; /* Black title */
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+.menu-btn {
+  background: linear-gradient(135deg, #4caf50, #8bc34a);
+}
+
+.menu-btn:hover {
+  background: linear-gradient(135deg, #3e8e41, #67a849);
+}
+
+/* Feedback Section */
+#feedback {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #444;
+  min-height: 40px;
+  text-align: center;
+  margin: 15px 0;
+}

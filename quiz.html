@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Mastery Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <!-- Menu Section -->
+  <div id="menu-page" class="active-section">
+    <div class="menu-container">
+      <h1 id="main-title">DOM Mastery Quiz</h1>
+      <button class="menu-btn" id="learning-mode-btn">Learning Mode</button>
+      <button class="menu-btn" id="manipulation-mode-btn">Learn DOM Manipulation</button>
+      <button class="menu-btn" id="quiz-mode-btn">Quiz Mode</button>
+    </div>
+  </div>
+
+  <!-- Learning Mode Section -->
+  <div id="learning-page" class="hidden">
+    <div class="quiz-container">
+      <h1 id="quiz-title">Learning Mode</h1>
+      <div id="learning-section">
+        <h2 id="learning-title">Step-by-Step DOM Learning</h2>
+        <div id="learning-step">Learn how to use DOM manipulation methods step by step!</div>
+        <button id="next-learning-step" class="menu-btn">Next Step</button>
+        <button class="menu-btn" id="back-to-menu-from-learning">Back to Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- DOM Manipulation Section -->
+  <div id="manipulation-page" class="hidden">
+    <div class="quiz-container">
+      <h1 id="quiz-title">Learn DOM Manipulation</h1>
+      <div id="manipulation-section">
+        <h2 id="manipulation-title">DOM Manipulation Techniques</h2>
+        <div id="manipulation-step">Explore DOM manipulation techniques with examples!</div>
+        <button id="next-manipulation-step" class="menu-btn">Next Technique</button>
+        <button class="menu-btn" id="back-to-menu-from-manipulation">Back to Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quiz Mode Section -->
+  <div id="quiz-page" class="hidden">
+    <div class="quiz-container">
+      <h1 id="quiz-title">Quiz Mode</h1>
+      <div id="quiz-section">
+        <p id="question">Question: What method is used to select an element by its ID?</p>
+        <input id="user-answer" type="text" placeholder="Type your answer here...">
+        <button id="submit-answer" class="menu-btn">Submit Answer</button>
+        <div id="feedback"></div>
+        <button id="next-question" class="menu-btn hidden">Next Question</button>
+        <button class="menu-btn" id="back-to-menu-from-quiz">Back to Menu</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
